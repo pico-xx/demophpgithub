@@ -1,7 +1,11 @@
+<?php
+  Header('Cache-Control: no-cache');
+  Header('Pragma: no-cache');
+  date_default_timezone_set('UTC');
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <base href="http://aspnet-----------j1.azurewebsites.net/" />
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <title>Une page PHP</title>
 
