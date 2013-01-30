@@ -15,10 +15,7 @@
  
 </head>
   <body class="container">
-    <h1>Une page PHP</h1>
-        <p><a class="btn btn-primary btn-large" href="Default.aspx">Back.</a></p>
-    <p class="lead">Il est <?php $now = date('H:i:s'); echo $now; ?></p>
-
+    
     <script type="text/javascript">
         $(function () {
             // déclaration du canal de communication
@@ -51,5 +48,9 @@
         <ul id="messages">
         </ul>
     </div>
+<h3>Une page PHP</h3>
+        <p><a class="btn btn-primary btn-large" href="Default.aspx">Back.</a></p>
+    <p class="lead">Il est <?php $now = date('H:i:s'); echo $now; ?></p>
+
 </body>
 </html>
