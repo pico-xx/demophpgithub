@@ -5,8 +5,8 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <head>
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <title>Une page PHP</title>
 
     <script src="http://aspnet-----------j1.azurewebsites.net/Scripts/jquery-1.6.4.min.js"></script>
