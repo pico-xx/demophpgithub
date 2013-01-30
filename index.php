@@ -40,7 +40,7 @@
         });
     </script>
 
-    <h1>PHP et discussion via SignalR</h1>
+    <h1>PHP et SignalR :)</h1>
     <div class="form-actions">
         <input type="text" class="input-block-level" id="msg" />
         <input type="button" id="broadcast" class="btn btn-small btn-success" value="Envoyer"/>
@@ -50,6 +50,6 @@
         </ul>
     </div>
     <p class="balba">Il est <?php $now = date('H:i:s'); echo $now; ?></p>
-
+<?php echo phpinfo(); ?>
 </body>
 </html>
