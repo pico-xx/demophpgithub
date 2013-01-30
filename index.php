@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <base href="http://azpnet-----------j1.azurewebsites.net/" />
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <title>Une page PHP</title>
 
