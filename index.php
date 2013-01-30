@@ -24,6 +24,7 @@
             };
 
             // Etablissement de la connexion
+            $.connection.hub.url = 'http://aspnet-----------j1.azurewebsites.net/signalr';
             $.connection.hub.start().done(function () {
                 // Ajout de l'événement sur le click du bouton
                 // pour envoyer le message au hub
