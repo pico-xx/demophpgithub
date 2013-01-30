@@ -43,7 +43,7 @@
         <ul id="messages">
         </ul>
     </div>
-    <p class="lead">Il est <?php $now = date('H:i:s'); echo $now; ?></p>
+    <p class="balba">Il est <?php $now = date('H:i:s'); echo $now; ?></p>
 
 </body>
 </html>
