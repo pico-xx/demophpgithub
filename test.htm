@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<html lang="en">
+<head>
+    <base href="http://mademophp.azurewebsites.net/" />
+    <script src="Scripts/jquery-1.6.4.min.js"></script>
+    <script src="Scripts/jquery.signalR-1.0.0-rc2.min.js"></script>
+    <script src="signalr/hubs" type="text/javascript"></script>
+    <title>Site ASP.NET</title>
+</head>
+<body class="container">
+    <script type="text/javascript">
+        $(function () {
+            // déclaration du canal de communication
+            var monCanal = $.connection.monHub;
+
+            // Déclaration de la 
+            // fonction de réception des messages en provenance du serveur
+            monCanal.client.messageDepuisHub = function (message) {
+                $('#messages').append('<li>' + message + '</li>');
+            };
+
+            // Etablissement de la connexion
+            $.connection.hub.start().done(function () {
+                // Ajout de l'événement sur le click du bouton
+                // pour envoyer le message au hub
+                $("#broadcast").click(function () {
+                    // Call the monCanal method on the server
+                    monCanal.server.messageDepuisClient($('#msg').val());
+                });
+            });
+        });
+    </script>
+
+    <h1>ASP.NET: discussion via SignalR</h1>
+    <div class="form-actions">
+        <input type="text" class="input-block-level" id="msg" />
+        <input type="button" id="broadcast" class="btn btn-small btn-success" value="Envoyer"/>
+    </div>
+    <div class="lead">
+        <ul id="messages">
+        </ul>
+    </div>
+</body>
+</html>
