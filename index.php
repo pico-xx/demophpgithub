@@ -1,8 +1,3 @@
-<?php
-  Header('Cache-Control: no-cache');
-  Header('Pragma: no-cache');
-  date_default_timezone_set('UTC');
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -48,8 +43,6 @@
         <ul id="messages">
         </ul>
     </div>
-<h3>Une page PHP</h3>
-        <p><a class="btn btn-primary btn-large" href="Default.aspx">Back.</a></p>
     <p class="lead">Il est <?php $now = date('H:i:s'); echo $now; ?></p>
 
 </body>
