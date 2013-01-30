@@ -3,9 +3,9 @@
   Header('Pragma: no-cache');
   date_default_timezone_set('UTC');
 ?>
-<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 <!DOCTYPE html>
 <html lang="en">
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <head>
     <title>Une page PHP</title>
 
