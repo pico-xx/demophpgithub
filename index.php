@@ -7,7 +7,7 @@
 <html lang="en">
   <head>
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <title>Une page PHP</title>
+    <title>Une autre page PHP</title>
 
     <script src="http://aspnet-----------j1.azurewebsites.net/Scripts/jquery-1.6.4.min.js"></script>
     <script src="http://aspnet-----------j1.azurewebsites.net/Scripts/jquery.signalR-1.0.0-rc2.min.js"></script>
